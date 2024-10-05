@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-ruby-dev
+  name: app-ruby-prod
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app-ruby-dev
+      app: app-ruby-prod
   template:
     metadata:
       labels:
-        app: app-ruby-dev
+        app: app-ruby-prod
     spec:
       containers:
-      - name: app
+      - name: app-ruby-prod
         image: pikitgb/test-argo-cd:latest
         ports:
         - containerPort: 4567

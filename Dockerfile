@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install Sinatra gem
-RUN gem install sinatra
+RUN gem install sinatra rack rackup
 
 # Expose the Sinatra app port
 EXPOSE 4567

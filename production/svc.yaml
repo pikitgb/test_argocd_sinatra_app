@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-ruby-dev-service
+  name: app-ruby-prod-service
 spec:
   selector:
-    app:  app-ruby-dev
+    app: app-ruby-prod
   ports:
     - protocol: TCP
       port: 8081

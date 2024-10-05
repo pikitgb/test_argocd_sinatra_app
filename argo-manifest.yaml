@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app
+  name: app-2
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/pikitgb/test_argocd_sinatra_app
+    repoURL: https://github.com/pikitgb/test_argocd_sinatra_app 
     targetRevision: HEAD
     path: development
 
@@ -22,3 +22,4 @@ spec:
     automated:
       selfHeal: true
       prune: true
+
