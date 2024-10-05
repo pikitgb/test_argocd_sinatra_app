@@ -1,6 +1,8 @@
 ## Repo
 https://github.com/pikitgb/test_argocd_sinatra_app
 
+# Run argocd ui locally
+kubectl port-forward svc/argocd-server -n argocd 8080:443 
 
 ## Change pikitgb by your own user in DockerHub Registry
 
