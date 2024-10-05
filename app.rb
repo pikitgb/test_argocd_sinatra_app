@@ -1,6 +1,6 @@
 # app.rb
-require 'sinatra'
+require "sinatra"
 
-get '/' do
+get "/" do
   "Hello World from Ruby!"
 end

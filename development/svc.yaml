@@ -4,7 +4,7 @@ metadata:
   name: app-ruby-dev-service
 spec:
   selector:
-    app:  app-ruby-dev
+    app: app-ruby-dev
   ports:
     - protocol: TCP
       port: 8082

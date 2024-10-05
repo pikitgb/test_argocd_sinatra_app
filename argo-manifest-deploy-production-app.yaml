@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/pikitgb/test_argocd_sinatra_app 
     targetRevision: HEAD
-    path: development
+    path: production
 
   destination: 
     server: https://kubernetes.default.svc

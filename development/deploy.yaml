@@ -13,7 +13,7 @@ spec:
         app: app-ruby-dev
     spec:
       containers:
-      - name: app
+      - name: app-ruby-dev
         image: pikitgb/test-argo-cd:latest
         ports:
         - containerPort: 4567
