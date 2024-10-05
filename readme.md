@@ -13,8 +13,8 @@ docker push pikitgb/test-argo-cd:latest
 left is the outside port right is the container port
 
 ```
-kubectl port-forward svc/app-ruby-dev-service -n argocd 8082:8081
-kubectl port-forward svc/app-ruby-prod-service -n argocd 8083:8081
+kubectl port-forward svc/app-ruby-dev-service -n argocd 8082:8082
+kubectl port-forward svc/app-ruby-prod-service -n argocd 8081:8081
 ```
 
 ```
