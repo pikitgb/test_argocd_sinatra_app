@@ -12,3 +12,7 @@ left is the container port right is the outside port
 kubectl port-forward svc/app-ruby-dev-service -n argocd 8081:8082
 kubectl port-forward svc/app-ruby-prod-service -n argocd 8081:8083
 ```
+
+```
+kubectl apply -f argo-manifest-deploy-production-app.yaml
+```
