@@ -7,13 +7,13 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/anveshmuppeda/argo-cd-demo
+    repoURL: https://github.com/pikitgb/test_argocd_sinatra_app
     targetRevision: HEAD
     path: development
 
   destination: 
     server: https://kubernetes.default.svc
-    namespace: argocd-demo
+    namespace: argocd
 
   syncPolicy:
     syncOptions:

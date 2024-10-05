@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-ruby
+  name: app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-ruby
+      app: app
   template:
     metadata:
       labels:
-        app: hello-ruby
+        app: app
     spec:
       containers:
-      - name: hello-ruby
-        image: your-dockerhub-username/hello-ruby:latest
+      - name: app
+        image: pikitgb/test-argo-cd:latest
         ports:
         - containerPort: 4567
