@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-ruby
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-ruby
+  template:
+    metadata:
+      labels:
+        app: hello-ruby
+    spec:
+      containers:
+      - name: hello-ruby
+        image: your-dockerhub-username/hello-ruby:latest
+        ports:
+        - containerPort: 4567
